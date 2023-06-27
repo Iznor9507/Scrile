@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 300px;
+  height: 20px;
+  background-color: #ddd;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  transition: width 2s ease-out;
+}
+
+.message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.message-enter {
+  opacity: 0;
+}
+
+.message-enter-active {
+  opacity: 1;
+}
+
+.message-exit {
+  opacity: 1;
+}
+
+.message-exit-active {
+  opacity: 0;
+}
